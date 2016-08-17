@@ -1,0 +1,17 @@
+._*
+.DS_*
+*.swp
+vendor/
+app/logs/*
+composer.lock
+.composer
+.bash_history
+.bash_logout
+.bash_profile
+.bashrc
+.viminfo
+.contactemail
+error_log
+.env
+*.rdb
+.idea

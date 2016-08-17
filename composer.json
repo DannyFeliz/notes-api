@@ -1,0 +1,33 @@
+{
+	"repositories": [
+		{
+			"type": "package",
+			"package": {
+				"name": "ccampbell/chromephp",
+				"version": "dev-master",
+				"source": {
+					"url": "https://github.com/ccampbell/chromephp",
+					"type": "git",
+					"reference": "master"
+				},
+				"autoload": {
+					"classmap": ["ChromePhp.php"]
+				}
+			}
+		}
+	],
+	"require": {
+        "phalcon/incubator": "v1.3.5",
+		"nesbot/carbon": "~1.18",
+		"symfony/var-dumper": "2.7.*@dev",
+		"vlucas/phpdotenv": "^2.0",
+		"monolog/monolog": "^1.16",
+		"sneakybobito/phalcon-stubs": "^2.0",
+		"anahkiasen/underscore-php": "^2.0",
+		"fabpot/goutte": "^3.1"
+	},
+	"require-dev": {
+		"nmapx/phalcon-ide": "^2.0",
+		"ccampbell/chromephp": "dev-master"
+	}
+}
