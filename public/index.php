@@ -5,14 +5,16 @@
 use Phalcon\Http\Response;
 use Phalcon\Logger\Adapter\File as Logger;
 
-header("Access-Control-Allow-Origin: *");
-header('Access-Control-Allow-Origin: *');
+#header("Access-Control-Allow-Origin: *");
+#header("Access-Control-Allow-Headers: *");
+// header('Access-Control-Allow-Origin: POST, GET, PUT, DELETE, OPTIONS');
+// header('Access-Control-Allow-Origin: origin, x-requested-with, content-type');
 
 try {
     define('APP_PATH', realpath('..'));
 
-    header('Access-Control-Allow-Origin: *');
-    header("Access-Control-Allow-Methods: GET, POST, PUT, OPTIONS");
+    // header('Access-Control-Allow-Origin: *');
+    // header("Access-Control-Allow-Methods: GET, POST, PUT, OPTIONS");
 
     //composer autoload
     require_once __DIR__ . '/../vendor/autoload.php';
