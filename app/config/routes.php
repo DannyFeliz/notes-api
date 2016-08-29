@@ -20,11 +20,25 @@ $application->get('/notes', [
     'getAll',
 ]);
 
+$application->get('/notes/{id:[0-9]+}', [
+    FactoryManager::getInstance('Notes\Controllers\NotesController'),
+    'getById',
+]);
+
 $application->post('/notes', [
     FactoryManager::getInstance('Notes\Controllers\NotesController'),
     'create',
 ]);
 
+$application->post('/notes/{id:[0-9]+}', [
+    FactoryManager::getInstance('Notes\Controllers\NotesController'),
+    'edit',
+]);
+
+$application->delete('/notes/{id:[0-9]+}', [
+    FactoryManager::getInstance('Notes\Controllers\NotesController'),
+    'delete',
+]);
 
 //
 //$application->get('/v1/subjects/{id:[0-9]+}', [
